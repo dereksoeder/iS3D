@@ -206,6 +206,7 @@ class FO_data_reader
         void read_surf_VH_MUSIC(long length, FO_surf * surf_ptr);
         void read_surf_VH_MUSIC_New(long length, FO_surf* surf_ptr);
         void read_surf_VH_hiceventgen(long length, FO_surf* surf_ptr);
+        void read_surf_VH_MUSIC_New_3pl1D(long length, FO_surf* surf_ptr, bool turn_on_bulk=false);
 };
 
 
