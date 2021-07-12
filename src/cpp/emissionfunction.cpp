@@ -1325,7 +1325,7 @@ void EmissionFunctionArray::calculate_spectra(std::vector< std::vector <Sampled_
 
     // freezeout surface info exclusive for VH
     double *E, *T, *P;
-    if (MODE == 0 || MODE == 1 || MODE == 4 || MODE == 5 || MODE == 6 || MODE == 7)
+    if (MODE == 0 || MODE == 1 || MODE == 4 || MODE == 5 || MODE == 6 || MODE == 7 || MODE == 8)
     {
       E = (double*)calloc(FO_length, sizeof(double));
       P = (double*)calloc(FO_length, sizeof(double));
@@ -1422,7 +1422,7 @@ void EmissionFunctionArray::calculate_spectra(std::vector< std::vector <Sampled_
       //reading info from surface
       surf = &surf_ptr[icell];
 
-      if (MODE == 0 || MODE == 1 || MODE == 4 || MODE == 5 || MODE == 6 || MODE == 7)
+      if (MODE == 0 || MODE == 1 || MODE == 4 || MODE == 5 || MODE == 6 || MODE == 7 || MODE == 8)
       {
         E[icell] = surf->E;
         P[icell] = surf->P;
@@ -1500,7 +1500,7 @@ void EmissionFunctionArray::calculate_spectra(std::vector< std::vector <Sampled_
 
     // compute the particle spectra
 
-    if (MODE == 0 || MODE == 1 || MODE == 4 || MODE == 5 || MODE == 6 || MODE == 7) // viscous hydro
+    if (MODE == 0 || MODE == 1 || MODE == 4 || MODE == 5 || MODE == 6 || MODE == 7 || MODE == 8) // viscous hydro
     {
       switch(DF_MODE)
       {
@@ -1706,7 +1706,7 @@ void EmissionFunctionArray::calculate_spectra(std::vector< std::vector <Sampled_
     free(Sign);
     free(Baryon);
 
-    if (MODE == 0 || MODE == 1 || MODE == 4 || MODE == 5 || MODE == 6 || MODE == 7)
+    if (MODE == 0 || MODE == 1 || MODE == 4 || MODE == 5 || MODE == 6 || MODE == 7 || MODE == 8)
     {
       free(E);
       free(P);
