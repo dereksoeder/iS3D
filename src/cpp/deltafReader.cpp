@@ -18,6 +18,9 @@
 using namespace std;
 
 
+namespace iS3D
+{
+
 Deltaf_Data::Deltaf_Data(ParameterReader * paraRdr_in)
 {
   paraRdr = paraRdr_in;
@@ -649,10 +652,4 @@ void Deltaf_Data::compute_particle_densities(particle_info * particle_data, int 
   }
 }
 
-
-
-
-
-
-
-
+} //namespace iS3D

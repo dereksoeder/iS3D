@@ -27,6 +27,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 // Class Lab_Momentum (can I move this to sampling kernel?)
 //------------------------------------------
 Lab_Momentum::Lab_Momentum(LRF_Momentum pLRF_in)
@@ -1779,3 +1782,5 @@ void EmissionFunctionArray::calculate_spectra(std::vector< std::vector <Sampled_
     //cout << "\ncalculate_spectra() took " << t2.tv_sec - t1.tv_sec << " seconds." << endl;
     //cout << "\ncalculate_spectra() took " << (t2 - t1) << " seconds." << endl;
   }
+
+} //namespace iS3D

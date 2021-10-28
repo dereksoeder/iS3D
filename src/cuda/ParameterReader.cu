@@ -8,6 +8,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 //----------------------------------------------------------------------
 ParameterReader::ParameterReader()
 {
@@ -165,3 +168,5 @@ void ParameterReader::echo()
   for (long ii=0; ii<names->size(); ii++) cout << (*names)[ii] << "=" << (*values)[ii] << "  ";
   cout << endl;
 }
+
+} //namespace iS3D

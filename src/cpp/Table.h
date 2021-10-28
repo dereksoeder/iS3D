@@ -9,6 +9,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 class Table
 {
   private:
@@ -39,5 +42,7 @@ class Table
     double interp(long, long, double, int mode=6);
     double invert(long, long, double, int mode=6);
 };
+
+} //namespace iS3D
 
 #endif

@@ -19,6 +19,9 @@ Change logs: see arsenal.h
 
 using namespace std;
 
+namespace iS3D
+{
+
 //**********************************************************************
 double sixPoint2dInterp(double x, double y,
     double v00, double v01, double v02, double v10, double v11, double v20)
@@ -1077,6 +1080,4 @@ double R200(double aL)
   return result;
 }
 
-
-
-
+} //namespace iS3D

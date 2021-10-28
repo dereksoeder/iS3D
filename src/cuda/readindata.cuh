@@ -8,6 +8,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 typedef struct
 {
   int mc_id; // Monte Carlo number according PDG
@@ -76,5 +79,7 @@ class FO_data_reader
         void read_surf_VH_MUSIC(long length, FO_surf* surf_ptr);
         int read_resonances_list(particle_info* particle);
 };
+
+} //namespace iS3D
 
 #endif

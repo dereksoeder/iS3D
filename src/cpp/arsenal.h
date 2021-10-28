@@ -8,6 +8,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 void printline();
 double sixPoint2dInterp(double x, double y,
     double v00, double v01, double v02, double v10, double v11, double v20);
@@ -79,5 +82,7 @@ void vector_addition(const double a[], const double b[], double c[], int n);			/
 void vector_subtraction(const double a[], const double b[], double c[], int n);			// compute a - b, store in c
 void free_2D(double ** M, int n);
 void free_3D(double *** M, int n, int m);
+
+} //namespace iS3D
 
 #endif

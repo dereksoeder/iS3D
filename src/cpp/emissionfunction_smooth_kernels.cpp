@@ -25,6 +25,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 void EmissionFunctionArray::calculate_dN_pTdpTdphidy(double *Mass, double *Sign, double *Degeneracy, double *Baryon,
   double *T_fo, double *P_fo, double *E_fo, double *tau_fo, double *eta_fo, double *ux_fo, double *uy_fo, double *un_fo,
   double *dat_fo, double *dax_fo, double *day_fo, double *dan_fo,
@@ -2391,3 +2394,5 @@ void EmissionFunctionArray::calculate_dN_pTdpTdphidy(double *Mass, double *Sign,
         //free memory
         free(dN_pTdpTdphidy_all);
       }
+
+} //namespace iS3D

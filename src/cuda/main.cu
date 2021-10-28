@@ -17,6 +17,7 @@
 #include "deltafReader.cuh"
 
 using namespace std;
+using namespace iS3D;
 
 int main(int argc, char *argv[])
 {

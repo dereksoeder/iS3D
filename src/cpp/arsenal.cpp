@@ -12,6 +12,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 void printline()
 {
   cout << "______________________________\n" << endl;
@@ -1271,5 +1274,4 @@ void free_3D(double *** M, int n, int m)
   free(M);
 }
 
-
-
+} //namespace iS3D

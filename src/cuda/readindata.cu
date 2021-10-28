@@ -15,6 +15,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 FO_data_reader::FO_data_reader(ParameterReader* paraRdr_in, string path_in)
 {
   paraRdr = paraRdr_in;
@@ -556,3 +559,5 @@ for (int i = 0; i < Nparticle; i++)
   }
 return(Nparticle);
 }
+
+} //namespace iS3D

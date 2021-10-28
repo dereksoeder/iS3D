@@ -3,6 +3,9 @@
 
 #include <ctime>
 
+namespace iS3D
+{
+
 class Stopwatch
 {
   private:
@@ -13,6 +16,8 @@ class Stopwatch
     void toc() {end=clock();}
     double takeTime() {return ((long double)(end - start)) / CLOCKS_PER_SEC;}
 };
+
+} //namespace iS3D
 
 #endif
 

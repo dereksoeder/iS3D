@@ -1,6 +1,9 @@
 #ifndef PARTICLE_H
 #define PARTICLE_H
 
+namespace iS3D
+{
+
 class particle
 {
 public:
@@ -54,5 +57,7 @@ public:
   double py = 0.0;
   double pz = 0.0;
 };
+
+} //namespace iS3D
 
 #endif

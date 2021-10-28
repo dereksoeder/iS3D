@@ -10,6 +10,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 double sixPoint2dInterp(double x, double y,
     double v00, double v01, double v02, double v10, double v11, double v20);
 
@@ -73,6 +76,8 @@ void get_bin_average_and_count(istream& is, ostream& os, vector<double>* bins, l
 // anisotropic functions for vah_pl_matching surface reader
 double aL_fit(double pl_peq_ratio);
 double R200(double aL);
+
+} //namespace iS3D
 
 #endif
 

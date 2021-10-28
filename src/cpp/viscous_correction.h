@@ -1,6 +1,9 @@
 #ifndef VISCOUS_CORRECTION_H
 #define VISCOUS_CORRECTION_H
 
+namespace iS3D
+{
+
 class Milne_Basis
 {
   public:
@@ -66,5 +69,7 @@ class Surface_Element_Vector
     void boost_dsigma_to_lrf(Milne_Basis basis_vectors, double ut, double ux, double uy, double un);
     void compute_dsigma_magnitude();
 };
+
+} //namespace iS3D
 
 #endif

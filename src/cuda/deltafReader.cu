@@ -14,6 +14,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 DeltafReader::DeltafReader(ParameterReader * paraRdr_in, string path_in)
 {
   paraRdr = paraRdr_in;
@@ -279,3 +282,5 @@ deltaf_coefficients DeltafReader::load_coefficients(FO_surf *surface, long FO_le
 
   return df_data;
 }
+
+} //namespace iS3D

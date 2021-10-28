@@ -7,6 +7,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 class ParameterReader
 {
   private:
@@ -26,6 +29,8 @@ class ParameterReader
     double getVal(string name); // return the value for parameter with "name"
     void echo(); // print out all parameters to the screen
 };
+
+} //namespace iS3D
 
 
 #endif

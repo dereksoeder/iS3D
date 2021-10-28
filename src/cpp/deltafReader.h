@@ -13,6 +13,9 @@
 using namespace std;
 
 
+namespace iS3D
+{
+
 class Deltaf_Data
 {
     private:
@@ -104,5 +107,7 @@ class Deltaf_Data
 
         void compute_particle_densities(particle_info * particle_data, int Nparticle);
 };
+
+} //namespace iS3D
 
 #endif

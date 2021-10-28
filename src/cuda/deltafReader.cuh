@@ -8,6 +8,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 typedef struct
 {
   //  Coefficients of 14 moment approximation (vhydro)
@@ -48,5 +51,7 @@ class DeltafReader
 
         deltaf_coefficients load_coefficients(FO_surf *surface, long FO_length_in);
 };
+
+} //namespace iS3D
 
 #endif

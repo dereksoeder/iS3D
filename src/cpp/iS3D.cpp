@@ -16,6 +16,9 @@
 #include "ParameterReader.h"
 #include "deltafReader.h"
 
+namespace iS3D
+{
+
 IS3D::IS3D()
 {
 }
@@ -190,3 +193,5 @@ void IS3D::run_particlization(int fo_from_file)
   cout << "Done calculating particle spectra. Output stored in results folder. Goodbye!" << endl;
 
 }
+
+} //namespace iS3D

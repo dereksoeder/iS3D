@@ -23,6 +23,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 // Class EmissionFunctionArray ------------------------------------------
 EmissionFunctionArray::EmissionFunctionArray(ParameterReader* paraRdr_in, Table* chosen_particles_in, Table* pT_tab_in, Table* phi_tab_in, Table* y_tab_in, Table* eta_tab_in,
                                               particle_info* particles_in, int Nparticles_in, FO_surf* surf_ptr_in, long FO_length_in, deltaf_coefficients df_in)
@@ -1225,3 +1228,5 @@ void EmissionFunctionArray::calculate_spectra()
     }
   }
 }
+
+} //namespace iS3D

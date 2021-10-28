@@ -5,6 +5,9 @@
 #include <stdlib.h>
 using namespace std;
 
+namespace iS3D
+{
+
 // should rename file local_rest_frame.cpp
 
 Milne_Basis::Milne_Basis(double ut, double ux, double uy, double un, double uperp, double utperp, double tau)
@@ -171,3 +174,5 @@ void Baryon_Diffusion::boost_Vmu_to_lrf(Milne_Basis basis_vectors, double tau2)
     Vy_LRF = Vx * Yx  +  Vy * Yy;
     Vz_LRF = - Vt * Zt  +  tau2 * Vn * Zn;
 }
+
+} //namespace iS3D

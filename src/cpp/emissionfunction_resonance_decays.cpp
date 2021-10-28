@@ -31,6 +31,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 // grouping:
 //  - 2-body decays take 62.6s
 //  - 3-body decays take 122.9s
@@ -2156,3 +2159,5 @@ MT_fit_parameters EmissionFunctionArray::estimate_MT_function_of_dNdypTdpTdphi(i
 
     return MT_params;
 }
+
+} //namespace iS3D

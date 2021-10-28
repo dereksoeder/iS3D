@@ -16,6 +16,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 Gauss_Laguerre::Gauss_Laguerre()
 {
   /////////////////////////
@@ -1844,3 +1847,4 @@ int PDG_Data::read_resonances(particle_info * particle)
   return Nparticle;
 }
 
+} //namespace iS3D

@@ -28,6 +28,9 @@
 using namespace std;
 
 
+namespace iS3D
+{
+
 void EmissionFunctionArray::sample_dN_dy(Sampled_Particle new_particle, double yp)
 {
   // construct the dN/dy distribution averaged over rapidity window = 2.Y_CUT by adding counts from all events
@@ -1237,3 +1240,5 @@ void EmissionFunctionArray::sample_dN_pTdpTdphidy_VAH_PL(double *Mass, double *S
   printf("Sampling particles from VAH \n");
   printf("NOTHING HERE YET \n");
 }
+
+} //namespace iS3D

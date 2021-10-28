@@ -2,6 +2,9 @@
 #ifndef GAUSSTHERMAL_H
 #define GAUSSTHERMAL_H
 
+namespace iS3D
+{
+
 double GaussThermal(double thermal_integrand(double pbar, double mbar, double alphaB, double baryon, double sign), double * pbar_root, double * pbar_weight, int pbar_pts, double mbar, double alphaB, double baryon, double sign);
 
 // equilibrium particle density
@@ -21,6 +24,8 @@ double Gauss1D_mod(double modified_1D_integrand(double pbar, double mbar, double
 
 double E_mod_int(double pbar, double mbar, double lambda, double sign);
 double P_mod_int(double pbar, double mbar, double lambda, double sign);
+
+} //namespace iS3D
 
 
 #endif

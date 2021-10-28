@@ -24,6 +24,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 void EmissionFunctionArray::calculate_spin_polzn(double *Mass, double *Sign, double *Degeneracy,
   double *tau_fo, double *eta_fo, double *ux_fo, double *uy_fo, double *un_fo,
   double *dat_fo, double *dax_fo, double *day_fo, double *dan_fo,
@@ -263,3 +266,5 @@ void EmissionFunctionArray::calculate_spin_polzn(double *Mass, double *Sign, dou
     free(Sn_all);
     free(Snorm_all);
   }
+
+} //namespace iS3D

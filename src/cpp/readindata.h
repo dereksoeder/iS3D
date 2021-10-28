@@ -7,6 +7,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 class Gauss_Laguerre
 {
   private:
@@ -227,5 +230,7 @@ class PDG_Data
     int read_resonances_smash_box(particle_info * particle, string pdg_filename);
     int read_resonances(particle_info * particle);
 };
+
+} //namespace iS3D
 
 #endif

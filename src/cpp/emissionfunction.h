@@ -13,6 +13,9 @@
 
 using namespace std;
 
+namespace iS3D
+{
+
 // local rest frame momentum
 typedef struct
 {
@@ -291,5 +294,7 @@ public:
   //:::::::::::::::::::::::::::::::::::::::::::::::::
 
 };
+
+} //namespace iS3D
 
 #endif

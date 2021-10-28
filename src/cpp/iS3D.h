@@ -6,6 +6,9 @@
 #include "particle.h"
 #include <cmath>
 
+namespace iS3D
+{
+
 const double hbarC = 0.197327053;  //GeV*fm
 const double two_pi = 2.0 * M_PI;
 const double two_pi2_hbarC3 = 2.0 * pow(M_PI, 2) * pow(hbarC, 3);
@@ -95,5 +98,7 @@ public:
                                 );
   //void set_particle_list(std::vector< std::vector<Sampled_Particle> > list_in);
 };
+
+} //namespace iS3D
 
 #endif

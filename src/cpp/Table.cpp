@@ -17,12 +17,15 @@
 #define INIT_GUESS 1
 #define ACCURACY 1e-4
 
+using namespace std;
+
+namespace iS3D
+{
+
 // Used to invert the table
 Table *zq_global_table;
 long zq_global_colX, zq_global_colY;
 int zq_global_mode;
-
-using namespace std;
 
 //----------------------------------------------------------------------
 // Constructors:
@@ -276,3 +279,5 @@ double Table::invert(long colX, long colY, double yy, int mode)
   zq_global_mode = mode;
   return invertFunc(&zq_global_invert_hook, yy, (*(*data)[colX-1])[0], (*(*data)[colX-1])[numberOfRows-1], (*(*data)[colX-1])[1]-(*(*data)[colX-1])[0], (*(*data)[colX-1])[INIT_GUESS], ACCURACY);
 }
+
+} //namespace iS3D

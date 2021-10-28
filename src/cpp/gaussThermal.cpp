@@ -3,6 +3,9 @@
 #include <cmath>
 #include "gaussThermal.h"
 
+namespace iS3D
+{
+
 // gauss integration routine
 double GaussThermal(double thermal_integrand(double pbar, double mbar, double alphaB, double baryon, double sign), double * pbar_root, double * pbar_weight, int pbar_pts, double mbar, double alphaB, double baryon, double sign)
 {
@@ -115,16 +118,4 @@ double P_mod_int(double pbar, double mbar, double lambda, double sign)
 	return pbar*pbar*scale2 / sqrt(pbar*pbar*scale2 + mbar*mbar) * exp(pbar) / (exp(Ebar) + sign);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+} //namespace iS3D

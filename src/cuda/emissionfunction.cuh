@@ -9,6 +9,9 @@
 #include "deltafReader.cuh"
 using namespace std;
 
+namespace iS3D
+{
+
 class EmissionFunctionArray
 {
 private:
@@ -57,5 +60,7 @@ public:
   void calculate_spectra();
 
 };
+
+} //namespace iS3D
 
 #endif
