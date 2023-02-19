@@ -144,6 +144,7 @@ void FO_data_reader::read_surf_switch(long length, FO_surf* surf_ptr)
   else if (mode == 6) read_surf_VH_MUSIC_New(length, surf_ptr); //boost invariant surface from new (public) version of MUSIC
   else if (mode == 7) read_surf_VH_hiceventgen(length, surf_ptr); //boost invariant surface produced by the hydro module in https://github.com/Duke-QCD/hic-eventgen
   else if (mode == 8) read_surf_VH_MUSIC_New_3pl1D(length, surf_ptr, false);  // (Include_Bulk_Visc_Yes_1_No_0 (turn_on_bulk) = 0)
+  else if (mode == 9) read_surf_VH_MUSIC_New_3pl1D(length, surf_ptr, true);   // (Include_Bulk_Visc_Yes_1_No_0 (turn_on_bulk) = 1)
   return;
 }
 

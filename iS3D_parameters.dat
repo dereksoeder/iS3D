@@ -13,6 +13,8 @@ mode       		      	= 0 	 # mode for reading in freeze out information
 					 # 5: reads freezeout file from 3+1D viscous hydro with thermal vorticity terms (gpu-vh format)
 					 # 6: reads freezeout file from 2+1D viscous hydro (new public MUSIC boost invariant format)
 					 # 7: reads freezeout file from 2+1D viscous hydro (hic-eventgen format)
+					 # 8: reads freezeout file from 3+1D ideal hydro (new public MUSIC format)
+					 # 9: reads freezeout file from 3+1D ideal hydro (new public MUSIC format, with bulk pressure)
 
 hrg_eos				= 2	 # HRG equation of state (PDG/chosen_particles.dat MUST be subset of corresponding file)
 					 # 1: reads pdg-urqmd_v3.3+.dat (goes up to n-2250)
